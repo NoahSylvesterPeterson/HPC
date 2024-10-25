@@ -112,10 +112,10 @@ void Jacobi(VD &Solution, mpiInfo &myMPI)
 
 double Dot(VD &vec1, VD &vec2, mpiInfo &myMPI)
 {
-  double global_count;
+  double global_count = 0.;
   double count = 0.;
-  rLOOP count += vec1[r] * vec2[r] / myMPI.peMultiplicity[r];
-  MPI_Allreduce(&count, &global_count, 1, MPI_INT, MPI_SUM, MPI_COMM_WORLD);
+  MPI_Allreduce(&count, &global_count, 1, MPI_DOUBLE, MPI_SUM, MPI_COMM_WORLD);
+  cout << "global: " <<global_count << endl;
   return (global_count);
 }
 
