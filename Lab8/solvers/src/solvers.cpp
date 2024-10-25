@@ -44,7 +44,7 @@ int main(int argc, char *argv[])
    int nPEx, nPEy, nCellx, nCelly;
    string solver;
    
-   //   timingInfo myTime("main");
+   timingInfo myTime("main");
 
     if ( myMPI.myPE == 0 )
       {
@@ -60,7 +60,7 @@ int main(int argc, char *argv[])
        cout << "\n";
       }
     
-    //    myTime.Start(myMPI.myPE);
+    myTime.Start(myMPI.myPE);
 
     solver = "none";
      
@@ -115,7 +115,7 @@ int main(int argc, char *argv[])
    MESH.plot( "peMult"  , myMPI.peMultiplicity , 0 , myMPI      );
    MESH.plot( "phi"  , MESH.phi , 0 , myMPI      );
 
-   //   myTime.Finish(myMPI.myPE);
+   myTime.Finish(myMPI.myPE);
 
    MPI_Finalize();
    return 0;

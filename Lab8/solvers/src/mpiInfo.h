@@ -134,7 +134,7 @@ class mpiInfo
     peMultiplicity.resize(nField + 1);
 
     /* TO-DO in Lab: Compute peMultiplicity */
-    rLOOP peMultiplicity[r] = 1.;
+    rLOOP peMultiplicity[r] = 1;
     PEsum(peMultiplicity);
     //cout << "line 139" <<endl;
     //rLOOP if (peMultiplicity[r] == 3) peMultiplicity[r] = 4; 

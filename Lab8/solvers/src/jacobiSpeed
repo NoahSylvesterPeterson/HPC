@@ -1,0 +1,16 @@
+
+------------------------------------------------------
+
+ S O L V E R S                                        
+ D E M O   C O D E                                    
+
+ Running on 4 processors 
+
+------------------------------------------------------
+
+[timingInfo] [main] Start time (Wall): 8.11423e+06 Start time (CPU) : 297074
+Jacobi converged in 432 iterations.
+(o) Writing gnuplot command file 'pc'
+(o) Writing gnuplot command file 'pc'
+[timingInfo] [main] Finish time (Wall): 8.11423e+06 Finish time (CPU) : 306287
+[timingInfo] [main] Elapsed time (Wall, seconds): 0.0297826 Elapsed time (CPU, seconds) : 0.009213
