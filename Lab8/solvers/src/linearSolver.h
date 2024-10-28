@@ -114,8 +114,9 @@ double Dot(VD &vec1, VD &vec2, mpiInfo &myMPI)
 {
   double global_count = 0.;
   double count = 0.;
+  rLOOP count += vec1[r]*vec2[r]/myMPI.peMultiplicity[r];
   MPI_Allreduce(&count, &global_count, 1, MPI_DOUBLE, MPI_SUM, MPI_COMM_WORLD);
-  cout << "global: " <<global_count << endl;
+  //cout << "global: " <<global_count << endl;
   return (global_count);
 }
 
@@ -130,9 +131,6 @@ double Dot(VD &vec1, VD &vec2, mpiInfo &myMPI)
 
 void MatVecProd(VD &p, VD &prod, mpiInfo &myMPI)
 {
-
-  // Serial computation on this PE
-
   rowLOOP
   {
     prod[row] = 0.;
@@ -145,12 +143,7 @@ void MatVecProd(VD &p, VD &prod, mpiInfo &myMPI)
   }
 
   // Handle PE boundaries
-
-  /* TO-DO in Lab:  Accommodate PE Boundaries */
-  // cout << "line 157" <<endl;
   myMPI.PEsum(prod);
-  // rLOOP prod[r] = prod[r] / myMPI.peMultiplicity[r];
-  // cout << "line 159" <<endl;
 }
 
 //  ==
@@ -220,18 +213,15 @@ void CG(VD &Solution, mpiInfo &myMPI)
   b_PEsum.resize(nField + 1);
 
   // Accommodate the fact the the right-hand-side vector, b, is not complete on PE boundaries.
-  // cout << "line 227" <<endl;
   rLOOP b_PEsum[r] = b[r];
-  /* TO-DO in Lab */
   myMPI.PEsum(b_PEsum);
-  /* TO-DO in Lab */
-  // cout << "line 232" <<endl;
 
   // (3) Initialize residual, r, and r dot r for CG algorithm
 
   Residual(r, Solution, b_PEsum, myMPI);
 
   rowLOOP p[row] = r[row];
+
 
   r_dot_r = Dot(r, r, myMPI);
 
@@ -280,11 +270,7 @@ void CG(VD &Solution, mpiInfo &myMPI)
 
     // (4.7) Check convergence across PEs, store result in "global_converged"
 
-    /* TO-DO in Lab: Ensure global convergence on all PEs */
-    // cout << "line 287" <<endl;
     MPI_Allreduce(&converged, &global_converged, 1, MPI_INT, MPI_MIN, MPI_COMM_WORLD);
-    // MPI_Barrier( MPI_COMM_WORLD)
-    // cout << "line 290" <<endl;
   }
 
   // (5) Done - Inform user

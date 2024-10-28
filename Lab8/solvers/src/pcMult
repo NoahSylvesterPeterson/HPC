@@ -1,0 +1,19 @@
+#
+# This file is written by fd_mpi.  See plotter.h
+# To run this file in gnuplot: 
+#   (1) Start gnuplot
+#   (2) At the gnuplot prompt, enter the command:
+#          load 'pc'
+#
+# The current version of this plot command file will display
+# the plot to the screen.  To write the plot to a png file,
+# uncomment the two 'set' commands in the following lines.
+#
+#set term png
+#set output 'plot.png'
+
+set view 60, 30, 1, 1
+set xrange [0:1]
+set yrange [0:1]
+splot 'peMult_0_0.plt' w l, 'peMult_1_0.plt' w l, 'peMult_2_0.plt' w l, 'peMult_3_0.plt' w l, 'peMult_4_0.plt' w l, 'peMult_5_0.plt' w l, 'peMult_6_0.plt' w l, 'peMult_7_0.plt' w l, 'peMult_8_0.plt' w l, 'peMult_9_0.plt' w l, 'peMult_10_0.plt' w l, 'peMult_11_0.plt' w l, 'peMult_12_0.plt' w l, 'peMult_13_0.plt' w l, 'peMult_14_0.plt' w l, 'peMult_15_0.plt' w l
+

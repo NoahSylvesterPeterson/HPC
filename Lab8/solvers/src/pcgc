@@ -13,5 +13,5 @@
 #set output 'plot.png'
 
 
-splot 'phi0cg.plt' w l, 'phi1cg.plt' w l, 'phi2cg.plt' w l, 'phi3cg.plt' w l, 
+splot 'phi0cg.plt' w l, 'phi1cg.plt' w l, 'phi2cg.plt' w l, 'phi3cg.plt' w l, 'phi4cg.plt' w l, 'phi5cg.plt' w l, 'phi6cg.plt' w l, 'phi7cg.plt' w l, 'phi8cg.plt' w l,
 

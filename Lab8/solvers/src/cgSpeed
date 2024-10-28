@@ -8,15 +8,12 @@
 
 ------------------------------------------------------
 
-[timingInfo] [main] Start time (Wall): 8.11416e+06 Start time (CPU) : 239760
-global: 0
-global: 0
-global: 0
-CG converged in 1 iterations.
+[timingInfo] [main] Start time (Wall): 8.37717e+06 Start time (CPU) : 263176
+CG converged in 78 iterations.
 (o) Writing gnuplot command file 'pc'
 (o) Writing gnuplot command file 'pc'
-[timingInfo] [main] Finish time (Wall): 8.11416e+06 Finish time (CPU) : 249784
-[timingInfo] [main] Elapsed time (Wall, seconds): 0.052771 Elapsed time (CPU, seconds) : 0.010024
+[timingInfo] [main] Finish time (Wall): 8.37717e+06 Finish time (CPU) : 280135
+[timingInfo] [main] Elapsed time (Wall, seconds): 0.0438691 Elapsed time (CPU, seconds) : 0.016959
 
 ------------------------------------------------------
 
@@ -27,24 +24,12 @@ CG converged in 1 iterations.
 
 ------------------------------------------------------
 
-[timingInfo] [main] Start time (Wall): 8.1142e+06 Start time (CPU) : 303250
-global: 0
-global: global: global: 00
-0
-
-global: 0
-global: 0
-global: 0
-global: 0
-global: 0
-global: 0
-global: 0
-global: 0
-CG converged in 1 iterations.
+[timingInfo] [main] Start time (Wall): 8.37716e+06 Start time (CPU) : 285668
+CG converged in 83 iterations.
 (o) Writing gnuplot command file 'pc'
 (o) Writing gnuplot command file 'pc'
-[timingInfo] [main] Finish time (Wall): 8.1142e+06 Finish time (CPU) : 306764
-[timingInfo] [main] Elapsed time (Wall, seconds): 0.0535446 Elapsed time (CPU, seconds) : 0.003514
+[timingInfo] [main] Finish time (Wall): 8.37716e+06 Finish time (CPU) : 290672
+[timingInfo] [main] Elapsed time (Wall, seconds): 0.0231675 Elapsed time (CPU, seconds) : 0.005004
 
 ------------------------------------------------------
 
@@ -55,39 +40,12 @@ CG converged in 1 iterations.
 
 ------------------------------------------------------
 
-[timingInfo] [main] Start time (Wall): 8.1142e+06 Start time (CPU) : 305251
-global: 0
-global: global: 0
-0
-global: 0
-global: 0
-global: 0
-global: 0
-global: 0
-global: 0
-global: 0
-global: 0
-global: 0
-global: 0
-global: 0
-global: 0
-global: 0
-global: 0
-global: 0
-global: 0
-global: 0
-global: 0
-global: 0
-global: 0
-global: 0
-global: 0
-global: 0
-global: 0
-CG converged in 1 iterations.
+[timingInfo] [main] Start time (Wall): 8.3772e+06 Start time (CPU) : 334404
+CG converged in 78 iterations.
 (o) Writing gnuplot command file 'pc'
 (o) Writing gnuplot command file 'pc'
-[timingInfo] [main] Finish time (Wall): 8.1142e+06 Finish time (CPU) : 306806
-[timingInfo] [main] Elapsed time (Wall, seconds): 0.0772758 Elapsed time (CPU, seconds) : 0.001555
+[timingInfo] [main] Finish time (Wall): 8.3772e+06 Finish time (CPU) : 337277
+[timingInfo] [main] Elapsed time (Wall, seconds): 0.0429121 Elapsed time (CPU, seconds) : 0.002873
 
 ------------------------------------------------------
 
@@ -98,57 +56,9 @@ CG converged in 1 iterations.
 
 ------------------------------------------------------
 
-[timingInfo] [main] Start time (Wall): 8.1142e+06 Start time (CPU) : 349119
-global: 0
-global: 0
-global: 0
-CG converged in 1 iterations.
-global: 0
-global: 0
-global: 0
-global: 0
-global: 0
-global: 0
-global: 0
-global: 0
-global: 0
-global: 0
-global: 0
-global: 0
-global: 0
-global: 0
-global: 0
-global: 0
-global: 0
-global: 0
-global: 0
-global: 0
-global: 0
-global: 0
-global: 0
-global: 0
-global: 0
-global: 0
-global: 0
-global: 0
-global: 0
-global: 0
-global: 0
-global: 0
-global: 0
-global: 0
-global: 0
-global: 0
-global: 0
-global: 0
-global: 0
-global: 0
-global: 0
-global: 0
-global: 0
-global: 0
-global: 0
+[timingInfo] [main] Start time (Wall): 8.3772e+06 Start time (CPU) : 407019
+CG converged in 75 iterations.
 (o) Writing gnuplot command file 'pc'
 (o) Writing gnuplot command file 'pc'
-[timingInfo] [main] Finish time (Wall): 8.1142e+06 Finish time (CPU) : 350659
-[timingInfo] [main] Elapsed time (Wall, seconds): 0.232892 Elapsed time (CPU, seconds) : 0.00154
+[timingInfo] [main] Finish time (Wall): 8.3772e+06 Finish time (CPU) : 409216
+[timingInfo] [main] Elapsed time (Wall, seconds): 0.0511502 Elapsed time (CPU, seconds) : 0.002197
