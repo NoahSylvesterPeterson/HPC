@@ -1,0 +1,5 @@
+set style line 1 lt rgb "blue" lw 2
+set style line 2 lt rgb "red" lw 1
+set style line 3 lt rgb "cyan" lw 1
+splot "c1t1r1.plt" with lines ls 1 title "c_0 = 1", "c2t1r1.plt" with lines ls 2 title "c_0 = 2", "c5t1r1.plt" with lines ls 3 title "c_0 = 5"
+set title "Results with Changing c_0"

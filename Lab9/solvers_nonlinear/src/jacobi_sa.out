@@ -1,0 +1,377 @@
+
+------------------------------------------------------
+
+ S O L V E R S                                        
+ D E M O   C O D E                                    
+
+ Running on 1 processors 
+
+------------------------------------------------------
+
+
+Input Summary: 
+--------------------------- 
+No. PE   in  x-direction: 1
+             y-direction: 1
+No. Cells in x-direction: 40
+             y-direction: 40
+Linear solver           : jacobi
+Non-Linear solver       : sa
+
+LINEAR SOLVE for initial guess
+  (o) Jacobi converged in 10228 iterations.
+(o) Writing gnuplot command file pc_'phi'
+NON-LINEAR SOLVE
+[timingInfo] [timingInfo name not set] Start time (Wall): 3.76348e+06 Start time (CPU) : 1898303
+  (o) Jacobi converged in 9420 iterations.
+  (o) Jacobi converged in 8275 iterations.
+  (o) Jacobi converged in 8142 iterations.
+  (o) Jacobi converged in 7995 iterations.
+  (o) Jacobi converged in 7647 iterations.
+  (o) Jacobi converged in 7508 iterations.
+  (o) Jacobi converged in 7177 iterations.
+  (o) Jacobi converged in 6976 iterations.
+  (o) Jacobi converged in 6673 iterations.
+  (o) Jacobi converged in 6514 iterations.
+  (o) Jacobi converged in 6188 iterations.
+  (o) Jacobi converged in 5900 iterations.
+  (o) Jacobi converged in 5723 iterations.
+  (o) Jacobi converged in 5536 iterations.
+  (o) Jacobi converged in 5239 iterations.
+  (o) Jacobi converged in 5193 iterations.
+  (o) Jacobi converged in 4698 iterations.
+  (o) Jacobi converged in 4552 iterations.
+  (o) Jacobi converged in 4318 iterations.
+  (o) Jacobi converged in 4012 iterations.
+  (o) Jacobi converged in 3918 iterations.
+sa converged in 21 iterations.
+[timingInfo] [timingInfo name not set] Finish time (Wall): 3.7635e+06 Finish time (CPU) : 22670426
+[timingInfo] [timingInfo name not set] Elapsed time (Wall, seconds): 20.6704 Elapsed time (CPU, seconds) : 20.7721
+(o) Writing gnuplot command file pc_'phi_sa_jacobi'
+
+------------------------------------------------------
+
+ S O L V E R S                                        
+ D E M O   C O D E                                    
+
+ Running on 1 processors 
+
+------------------------------------------------------
+
+
+Input Summary: 
+--------------------------- 
+No. PE   in  x-direction: 1
+             y-direction: 1
+No. Cells in x-direction: 40
+             y-direction: 40
+Linear solver           : jacobi
+Non-Linear solver       : sa
+
+LINEAR SOLVE for initial guess
+  (o) Jacobi converged in 10212 iterations.
+(o) Writing gnuplot command file pc_'phi'
+NON-LINEAR SOLVE
+[timingInfo] [timingInfo name not set] Start time (Wall): 3.76351e+06 Start time (CPU) : 1882278
+  (o) Jacobi converged in 9656 iterations.
+  (o) Jacobi converged in 8855 iterations.
+  (o) Jacobi converged in 8544 iterations.
+  (o) Jacobi converged in 8283 iterations.
+  (o) Jacobi converged in 7987 iterations.
+  (o) Jacobi converged in 7696 iterations.
+  (o) Jacobi converged in 7527 iterations.
+  (o) Jacobi converged in 7309 iterations.
+  (o) Jacobi converged in 6923 iterations.
+  (o) Jacobi converged in 6775 iterations.
+  (o) Jacobi converged in 6397 iterations.
+  (o) Jacobi converged in 6185 iterations.
+  (o) Jacobi converged in 5813 iterations.
+  (o) Jacobi converged in 5667 iterations.
+  (o) Jacobi converged in 5334 iterations.
+  (o) Jacobi converged in 5152 iterations.
+  (o) Jacobi converged in 4828 iterations.
+  (o) Jacobi converged in 4756 iterations.
+  (o) Jacobi converged in 4245 iterations.
+  (o) Jacobi converged in 3993 iterations.
+  (o) Jacobi converged in 3731 iterations.
+sa converged in 21 iterations.
+[timingInfo] [timingInfo name not set] Finish time (Wall): 3.76353e+06 Finish time (CPU) : 23102675
+[timingInfo] [timingInfo name not set] Elapsed time (Wall, seconds): 21.2791 Elapsed time (CPU, seconds) : 21.2204
+(o) Writing gnuplot command file pc_'phi_sa_jacobi'
+
+------------------------------------------------------
+
+ S O L V E R S                                        
+ D E M O   C O D E                                    
+
+ Running on 1 processors 
+
+------------------------------------------------------
+
+
+Input Summary: 
+--------------------------- 
+No. PE   in  x-direction: 1
+             y-direction: 1
+No. Cells in x-direction: 40
+             y-direction: 40
+Linear solver           : jacobi
+Non-Linear solver       : sa
+
+LINEAR SOLVE for initial guess
+  (o) Jacobi converged in 10315 iterations.
+(o) Writing gnuplot command file pc_'phi'
+NON-LINEAR SOLVE
+[timingInfo] [timingInfo name not set] Start time (Wall): 3.76353e+06 Start time (CPU) : 1930199
+  (o) Jacobi converged in 10033 iterations.
+  (o) Jacobi converged in 9797 iterations.
+  (o) Jacobi converged in 9157 iterations.
+  (o) Jacobi converged in 8815 iterations.
+  (o) Jacobi converged in 8556 iterations.
+  (o) Jacobi converged in 8254 iterations.
+  (o) Jacobi converged in 7869 iterations.
+  (o) Jacobi converged in 7508 iterations.
+  (o) Jacobi converged in 7309 iterations.
+  (o) Jacobi converged in 6805 iterations.
+  (o) Jacobi converged in 6644 iterations.
+  (o) Jacobi converged in 6251 iterations.
+  (o) Jacobi converged in 5795 iterations.
+  (o) Jacobi converged in 5331 iterations.
+  (o) Jacobi converged in 4812 iterations.
+  (o) Jacobi converged in 4259 iterations.
+  (o) Jacobi converged in 4372 iterations.
+  (o) Jacobi converged in 4230 iterations.
+  (o) Jacobi converged in 4160 iterations.
+  (o) Jacobi converged in 3981 iterations.
+  (o) Jacobi converged in 3542 iterations.
+sa converged in 21 iterations.
+[timingInfo] [timingInfo name not set] Finish time (Wall): 3.76355e+06 Finish time (CPU) : 23675604
+[timingInfo] [timingInfo name not set] Elapsed time (Wall, seconds): 21.6306 Elapsed time (CPU, seconds) : 21.7454
+(o) Writing gnuplot command file pc_'phi_sa_jacobi'
+
+------------------------------------------------------
+
+ S O L V E R S                                        
+ D E M O   C O D E                                    
+
+ Running on 1 processors 
+
+------------------------------------------------------
+
+
+Input Summary: 
+--------------------------- 
+No. PE   in  x-direction: 1
+             y-direction: 1
+No. Cells in x-direction: 40
+             y-direction: 40
+Linear solver           : jacobi
+Non-Linear solver       : sa
+
+LINEAR SOLVE for initial guess
+  (o) Jacobi converged in 10228 iterations.
+(o) Writing gnuplot command file pc_'phi'
+NON-LINEAR SOLVE
+[timingInfo] [timingInfo name not set] Start time (Wall): 3.76357e+06 Start time (CPU) : 1907409
+  (o) Jacobi converged in 10156 iterations.
+  (o) Jacobi converged in 9728 iterations.
+  (o) Jacobi converged in 9072 iterations.
+  (o) Jacobi converged in 8743 iterations.
+  (o) Jacobi converged in 8069 iterations.
+  (o) Jacobi converged in 7558 iterations.
+  (o) Jacobi converged in 7150 iterations.
+  (o) Jacobi converged in 6710 iterations.
+  (o) Jacobi converged in 5765 iterations.
+  (o) Jacobi converged in 5881 iterations.
+  (o) Jacobi converged in 5772 iterations.
+  (o) Jacobi converged in 5497 iterations.
+  (o) Jacobi converged in 5253 iterations.
+  (o) Jacobi converged in 4977 iterations.
+  (o) Jacobi converged in 4673 iterations.
+  (o) Jacobi converged in 4352 iterations.
+  (o) Jacobi converged in 4132 iterations.
+  (o) Jacobi converged in 3799 iterations.
+  (o) Jacobi converged in 3502 iterations.
+  (o) Jacobi converged in 3165 iterations.
+sa converged in 20 iterations.
+[timingInfo] [timingInfo name not set] Finish time (Wall): 3.76359e+06 Finish time (CPU) : 21468243
+[timingInfo] [timingInfo name not set] Elapsed time (Wall, seconds): 19.4507 Elapsed time (CPU, seconds) : 19.5608
+(o) Writing gnuplot command file pc_'phi_sa_jacobi'
+
+------------------------------------------------------
+
+ S O L V E R S                                        
+ D E M O   C O D E                                    
+
+ Running on 1 processors 
+
+------------------------------------------------------
+
+
+Input Summary: 
+--------------------------- 
+No. PE   in  x-direction: 1
+             y-direction: 1
+No. Cells in x-direction: 40
+             y-direction: 40
+Linear solver           : jacobi
+Non-Linear solver       : sa
+
+LINEAR SOLVE for initial guess
+  (o) Jacobi converged in 10212 iterations.
+(o) Writing gnuplot command file pc_'phi'
+NON-LINEAR SOLVE
+[timingInfo] [timingInfo name not set] Start time (Wall): 3.76359e+06 Start time (CPU) : 1903629
+  (o) Jacobi converged in 10208 iterations.
+  (o) Jacobi converged in 10489 iterations.
+  (o) Jacobi converged in 10077 iterations.
+  (o) Jacobi converged in 10307 iterations.
+  (o) Jacobi converged in 9903 iterations.
+  (o) Jacobi converged in 9441 iterations.
+  (o) Jacobi converged in 9077 iterations.
+  (o) Jacobi converged in 8613 iterations.
+  (o) Jacobi converged in 8449 iterations.
+  (o) Jacobi converged in 8258 iterations.
+  (o) Jacobi converged in 7768 iterations.
+  (o) Jacobi converged in 7487 iterations.
+  (o) Jacobi converged in 7155 iterations.
+  (o) Jacobi converged in 6673 iterations.
+  (o) Jacobi converged in 6463 iterations.
+  (o) Jacobi converged in 6096 iterations.
+  (o) Jacobi converged in 5746 iterations.
+  (o) Jacobi converged in 5357 iterations.
+  (o) Jacobi converged in 5005 iterations.
+sa converged in 19 iterations.
+[timingInfo] [timingInfo name not set] Finish time (Wall): 3.76361e+06 Finish time (CPU) : 25641585
+[timingInfo] [timingInfo name not set] Elapsed time (Wall, seconds): 23.804 Elapsed time (CPU, seconds) : 23.738
+(o) Writing gnuplot command file pc_'phi_sa_jacobi'
+
+------------------------------------------------------
+
+ S O L V E R S                                        
+ D E M O   C O D E                                    
+
+ Running on 1 processors 
+
+------------------------------------------------------
+
+
+Input Summary: 
+--------------------------- 
+No. PE   in  x-direction: 1
+             y-direction: 1
+No. Cells in x-direction: 40
+             y-direction: 40
+Linear solver           : jacobi
+Non-Linear solver       : sa
+
+LINEAR SOLVE for initial guess
+  (o) Jacobi converged in 10228 iterations.
+(o) Writing gnuplot command file pc_'phi'
+NON-LINEAR SOLVE
+[timingInfo] [timingInfo name not set] Start time (Wall): 3.76361e+06 Start time (CPU) : 1909373
+  (o) Jacobi converged in 9420 iterations.
+  (o) Jacobi converged in 8596 iterations.
+  (o) Jacobi converged in 7381 iterations.
+  (o) Jacobi converged in 6412 iterations.
+  (o) Jacobi converged in 5275 iterations.
+  (o) Jacobi converged in 3638 iterations.
+  (o) Jacobi converged in 3080 iterations.
+sa converged in 7 iterations.
+[timingInfo] [timingInfo name not set] Finish time (Wall): 3.76362e+06 Finish time (CPU) : 8790522
+[timingInfo] [timingInfo name not set] Elapsed time (Wall, seconds): 6.90096 Elapsed time (CPU, seconds) : 6.88115
+(o) Writing gnuplot command file pc_'phi_sa_jacobi'
+
+------------------------------------------------------
+
+ S O L V E R S                                        
+ D E M O   C O D E                                    
+
+ Running on 1 processors 
+
+------------------------------------------------------
+
+
+Input Summary: 
+--------------------------- 
+No. PE   in  x-direction: 1
+             y-direction: 1
+No. Cells in x-direction: 40
+             y-direction: 40
+Linear solver           : jacobi
+Non-Linear solver       : sa
+
+LINEAR SOLVE for initial guess
+  (o) Jacobi converged in 10228 iterations.
+(o) Writing gnuplot command file pc_'phi'
+NON-LINEAR SOLVE
+[timingInfo] [timingInfo name not set] Start time (Wall): 3.76362e+06 Start time (CPU) : 1905791
+  (o) Jacobi converged in 9420 iterations.
+  (o) Jacobi converged in 8062 iterations.
+  (o) Jacobi converged in 8120 iterations.
+  (o) Jacobi converged in 7872 iterations.
+  (o) Jacobi converged in 7968 iterations.
+  (o) Jacobi converged in 7807 iterations.
+  (o) Jacobi converged in 7677 iterations.
+  (o) Jacobi converged in 7608 iterations.
+  (o) Jacobi converged in 7448 iterations.
+  (o) Jacobi converged in 7482 iterations.
+  (o) Jacobi converged in 7412 iterations.
+  (o) Jacobi converged in 7425 iterations.
+  (o) Jacobi converged in 7212 iterations.
+  (o) Jacobi converged in 7213 iterations.
+  (o) Jacobi converged in 7077 iterations.
+  (o) Jacobi converged in 7096 iterations.
+  (o) Jacobi converged in 6943 iterations.
+  (o) Jacobi converged in 6805 iterations.
+  (o) Jacobi converged in 6897 iterations.
+  (o) Jacobi converged in 6770 iterations.
+  (o) Jacobi converged in 6740 iterations.
+  (o) Jacobi converged in 6559 iterations.
+  (o) Jacobi converged in 6539 iterations.
+  (o) Jacobi converged in 6378 iterations.
+  (o) Jacobi converged in 6334 iterations.
+  (o) Jacobi converged in 6188 iterations.
+  (o) Jacobi converged in 6139 iterations.
+  (o) Jacobi converged in 6180 iterations.
+  (o) Jacobi converged in 5979 iterations.
+  (o) Jacobi converged in 5911 iterations.
+  (o) Jacobi converged in 5947 iterations.
+  (o) Jacobi converged in 5714 iterations.
+  (o) Jacobi converged in 5824 iterations.
+  (o) Jacobi converged in 5747 iterations.
+  (o) Jacobi converged in 5576 iterations.
+  (o) Jacobi converged in 5599 iterations.
+  (o) Jacobi converged in 5404 iterations.
+  (o) Jacobi converged in 5322 iterations.
+  (o) Jacobi converged in 5257 iterations.
+  (o) Jacobi converged in 5359 iterations.
+  (o) Jacobi converged in 5227 iterations.
+  (o) Jacobi converged in 5073 iterations.
+  (o) Jacobi converged in 5002 iterations.
+  (o) Jacobi converged in 4867 iterations.
+  (o) Jacobi converged in 4895 iterations.
+  (o) Jacobi converged in 4797 iterations.
+  (o) Jacobi converged in 4739 iterations.
+  (o) Jacobi converged in 4568 iterations.
+  (o) Jacobi converged in 4557 iterations.
+  (o) Jacobi converged in 4448 iterations.
+  (o) Jacobi converged in 4327 iterations.
+  (o) Jacobi converged in 4311 iterations.
+  (o) Jacobi converged in 4290 iterations.
+  (o) Jacobi converged in 4187 iterations.
+  (o) Jacobi converged in 4000 iterations.
+  (o) Jacobi converged in 4003 iterations.
+  (o) Jacobi converged in 3917 iterations.
+  (o) Jacobi converged in 3798 iterations.
+  (o) Jacobi converged in 3910 iterations.
+  (o) Jacobi converged in 3727 iterations.
+  (o) Jacobi converged in 3652 iterations.
+  (o) Jacobi converged in 3606 iterations.
+  (o) Jacobi converged in 3457 iterations.
+  (o) Jacobi converged in 3444 iterations.
+  (o) Jacobi converged in 3434 iterations.
+sa converged in 65 iterations.
+[timingInfo] [timingInfo name not set] Finish time (Wall): 3.76368e+06 Finish time (CPU) : 61290354
+[timingInfo] [timingInfo name not set] Elapsed time (Wall, seconds): 59.0722 Elapsed time (CPU, seconds) : 59.3846
+(o) Writing gnuplot command file pc_'phi_sa_jacobi'

@@ -1,0 +1,409 @@
+
+------------------------------------------------------
+
+ S O L V E R S                                        
+ D E M O   C O D E                                    
+
+ Running on 1 processors 
+
+------------------------------------------------------
+
+
+Input Summary: 
+--------------------------- 
+No. PE   in  x-direction: 1
+             y-direction: 1
+No. Cells in x-direction: 40
+             y-direction: 40
+Linear solver           : cg
+Non-Linear solver       : nr
+
+LINEAR SOLVE for initial guess
+  (o) CG converged in 149 iterations.
+(o) Writing gnuplot command file pc_'phi'
+NON-LINEAR SOLVE
+[timingInfo] [timingInfo name not set] Start time (Wall): 3.76368e+06 Start time (CPU) : 366168
+  (o) CG converged in 121 iterations.
+  (o) CG converged in 119 iterations.
+  (o) CG converged in 117 iterations.
+  (o) CG converged in 116 iterations.
+  (o) CG converged in 112 iterations.
+  (o) CG converged in 111 iterations.
+  (o) CG converged in 106 iterations.
+  (o) CG converged in 104 iterations.
+  (o) CG converged in 97 iterations.
+  (o) CG converged in 94 iterations.
+  (o) CG converged in 91 iterations.
+  (o) CG converged in 88 iterations.
+  (o) CG converged in 86 iterations.
+  (o) CG converged in 84 iterations.
+  (o) CG converged in 81 iterations.
+  (o) CG converged in 78 iterations.
+  (o) CG converged in 74 iterations.
+  (o) CG converged in 71 iterations.
+  (o) CG converged in 68 iterations.
+  (o) CG converged in 65 iterations.
+  (o) CG converged in 63 iterations.
+  (o) CG converged in 61 iterations.
+  (o) CG converged in 57 iterations.
+  (o) CG converged in 52 iterations.
+nr converged in 24 iterations.
+[timingInfo] [timingInfo name not set] Finish time (Wall): 3.76368e+06 Finish time (CPU) : 1215408
+[timingInfo] [timingInfo name not set] Elapsed time (Wall, seconds): 0.850804 Elapsed time (CPU, seconds) : 0.84924
+(o) Writing gnuplot command file pc_'phi_nr_cg'
+
+------------------------------------------------------
+
+ S O L V E R S                                        
+ D E M O   C O D E                                    
+
+ Running on 1 processors 
+
+------------------------------------------------------
+
+
+Input Summary: 
+--------------------------- 
+No. PE   in  x-direction: 1
+             y-direction: 1
+No. Cells in x-direction: 40
+             y-direction: 40
+Linear solver           : cg
+Non-Linear solver       : nr
+
+LINEAR SOLVE for initial guess
+  (o) CG converged in 149 iterations.
+(o) Writing gnuplot command file pc_'phi'
+NON-LINEAR SOLVE
+[timingInfo] [timingInfo name not set] Start time (Wall): 3.76368e+06 Start time (CPU) : 362920
+  (o) CG converged in 122 iterations.
+  (o) CG converged in 120 iterations.
+  (o) CG converged in 119 iterations.
+  (o) CG converged in 117 iterations.
+  (o) CG converged in 115 iterations.
+  (o) CG converged in 112 iterations.
+  (o) CG converged in 110 iterations.
+  (o) CG converged in 106 iterations.
+  (o) CG converged in 104 iterations.
+  (o) CG converged in 100 iterations.
+  (o) CG converged in 94 iterations.
+  (o) CG converged in 90 iterations.
+  (o) CG converged in 88 iterations.
+  (o) CG converged in 86 iterations.
+  (o) CG converged in 83 iterations.
+  (o) CG converged in 80 iterations.
+  (o) CG converged in 76 iterations.
+  (o) CG converged in 73 iterations.
+  (o) CG converged in 70 iterations.
+  (o) CG converged in 68 iterations.
+  (o) CG converged in 65 iterations.
+  (o) CG converged in 62 iterations.
+  (o) CG converged in 59 iterations.
+  (o) CG converged in 57 iterations.
+nr converged in 24 iterations.
+[timingInfo] [timingInfo name not set] Finish time (Wall): 3.76369e+06 Finish time (CPU) : 1238257
+[timingInfo] [timingInfo name not set] Elapsed time (Wall, seconds): 0.869821 Elapsed time (CPU, seconds) : 0.875337
+(o) Writing gnuplot command file pc_'phi_nr_cg'
+
+------------------------------------------------------
+
+ S O L V E R S                                        
+ D E M O   C O D E                                    
+
+ Running on 1 processors 
+
+------------------------------------------------------
+
+
+Input Summary: 
+--------------------------- 
+No. PE   in  x-direction: 1
+             y-direction: 1
+No. Cells in x-direction: 40
+             y-direction: 40
+Linear solver           : cg
+Non-Linear solver       : nr
+
+LINEAR SOLVE for initial guess
+  (o) CG converged in 149 iterations.
+(o) Writing gnuplot command file pc_'phi'
+NON-LINEAR SOLVE
+[timingInfo] [timingInfo name not set] Start time (Wall): 3.76368e+06 Start time (CPU) : 350311
+  (o) CG converged in 124 iterations.
+  (o) CG converged in 121 iterations.
+  (o) CG converged in 120 iterations.
+  (o) CG converged in 118 iterations.
+  (o) CG converged in 116 iterations.
+  (o) CG converged in 113 iterations.
+  (o) CG converged in 111 iterations.
+  (o) CG converged in 109 iterations.
+  (o) CG converged in 106 iterations.
+  (o) CG converged in 103 iterations.
+  (o) CG converged in 101 iterations.
+  (o) CG converged in 97 iterations.
+  (o) CG converged in 91 iterations.
+  (o) CG converged in 88 iterations.
+  (o) CG converged in 85 iterations.
+  (o) CG converged in 82 iterations.
+  (o) CG converged in 79 iterations.
+  (o) CG converged in 76 iterations.
+  (o) CG converged in 73 iterations.
+  (o) CG converged in 70 iterations.
+  (o) CG converged in 67 iterations.
+  (o) CG converged in 65 iterations.
+  (o) CG converged in 62 iterations.
+  (o) CG converged in 58 iterations.
+  (o) CG converged in 56 iterations.
+nr converged in 25 iterations.
+[timingInfo] [timingInfo name not set] Finish time (Wall): 3.76368e+06 Finish time (CPU) : 1253474
+[timingInfo] [timingInfo name not set] Elapsed time (Wall, seconds): 0.904864 Elapsed time (CPU, seconds) : 0.903163
+(o) Writing gnuplot command file pc_'phi_nr_cg'
+
+------------------------------------------------------
+
+ S O L V E R S                                        
+ D E M O   C O D E                                    
+
+ Running on 1 processors 
+
+------------------------------------------------------
+
+
+Input Summary: 
+--------------------------- 
+No. PE   in  x-direction: 1
+             y-direction: 1
+No. Cells in x-direction: 40
+             y-direction: 40
+Linear solver           : cg
+Non-Linear solver       : nr
+
+LINEAR SOLVE for initial guess
+  (o) CG converged in 149 iterations.
+(o) Writing gnuplot command file pc_'phi'
+NON-LINEAR SOLVE
+[timingInfo] [timingInfo name not set] Start time (Wall): 3.76369e+06 Start time (CPU) : 350401
+  (o) CG converged in 123 iterations.
+  (o) CG converged in 121 iterations.
+  (o) CG converged in 120 iterations.
+  (o) CG converged in 118 iterations.
+  (o) CG converged in 116 iterations.
+  (o) CG converged in 114 iterations.
+  (o) CG converged in 112 iterations.
+  (o) CG converged in 110 iterations.
+  (o) CG converged in 106 iterations.
+  (o) CG converged in 104 iterations.
+  (o) CG converged in 102 iterations.
+  (o) CG converged in 100 iterations.
+  (o) CG converged in 97 iterations.
+  (o) CG converged in 95 iterations.
+  (o) CG converged in 92 iterations.
+  (o) CG converged in 89 iterations.
+  (o) CG converged in 85 iterations.
+  (o) CG converged in 81 iterations.
+  (o) CG converged in 76 iterations.
+  (o) CG converged in 73 iterations.
+  (o) CG converged in 69 iterations.
+  (o) CG converged in 66 iterations.
+  (o) CG converged in 64 iterations.
+  (o) CG converged in 61 iterations.
+  (o) CG converged in 58 iterations.
+  (o) CG converged in 52 iterations.
+nr converged in 26 iterations.
+[timingInfo] [timingInfo name not set] Finish time (Wall): 3.76369e+06 Finish time (CPU) : 1310524
+[timingInfo] [timingInfo name not set] Elapsed time (Wall, seconds): 0.954852 Elapsed time (CPU, seconds) : 0.960123
+(o) Writing gnuplot command file pc_'phi_nr_cg'
+
+------------------------------------------------------
+
+ S O L V E R S                                        
+ D E M O   C O D E                                    
+
+ Running on 1 processors 
+
+------------------------------------------------------
+
+
+Input Summary: 
+--------------------------- 
+No. PE   in  x-direction: 1
+             y-direction: 1
+No. Cells in x-direction: 40
+             y-direction: 40
+Linear solver           : cg
+Non-Linear solver       : nr
+
+LINEAR SOLVE for initial guess
+  (o) CG converged in 149 iterations.
+(o) Writing gnuplot command file pc_'phi'
+NON-LINEAR SOLVE
+[timingInfo] [timingInfo name not set] Start time (Wall): 3.76369e+06 Start time (CPU) : 349088
+  (o) CG converged in 107 iterations.
+  (o) CG converged in 107 iterations.
+  (o) CG converged in 111 iterations.
+  (o) CG converged in 115 iterations.
+  (o) CG converged in 115 iterations.
+  (o) CG converged in 114 iterations.
+  (o) CG converged in 112 iterations.
+  (o) CG converged in 110 iterations.
+  (o) CG converged in 109 iterations.
+  (o) CG converged in 106 iterations.
+  (o) CG converged in 104 iterations.
+  (o) CG converged in 102 iterations.
+  (o) CG converged in 99 iterations.
+  (o) CG converged in 97 iterations.
+  (o) CG converged in 95 iterations.
+  (o) CG converged in 93 iterations.
+  (o) CG converged in 90 iterations.
+  (o) CG converged in 88 iterations.
+  (o) CG converged in 85 iterations.
+  (o) CG converged in 82 iterations.
+  (o) CG converged in 79 iterations.
+  (o) CG converged in 75 iterations.
+  (o) CG converged in 71 iterations.
+  (o) CG converged in 67 iterations.
+  (o) CG converged in 64 iterations.
+  (o) CG converged in 61 iterations.
+  (o) CG converged in 58 iterations.
+  (o) CG converged in 56 iterations.
+  (o) CG converged in 50 iterations.
+nr converged in 29 iterations.
+[timingInfo] [timingInfo name not set] Finish time (Wall): 3.76369e+06 Finish time (CPU) : 1398528
+[timingInfo] [timingInfo name not set] Elapsed time (Wall, seconds): 1.05154 Elapsed time (CPU, seconds) : 1.04944
+(o) Writing gnuplot command file pc_'phi_nr_cg'
+
+------------------------------------------------------
+
+ S O L V E R S                                        
+ D E M O   C O D E                                    
+
+ Running on 1 processors 
+
+------------------------------------------------------
+
+
+Input Summary: 
+--------------------------- 
+No. PE   in  x-direction: 1
+             y-direction: 1
+No. Cells in x-direction: 40
+             y-direction: 40
+Linear solver           : cg
+Non-Linear solver       : nr
+
+LINEAR SOLVE for initial guess
+  (o) CG converged in 149 iterations.
+(o) Writing gnuplot command file pc_'phi'
+NON-LINEAR SOLVE
+[timingInfo] [timingInfo name not set] Start time (Wall): 3.7637e+06 Start time (CPU) : 364899
+  (o) CG converged in 121 iterations.
+  (o) CG converged in 121 iterations.
+  (o) CG converged in 114 iterations.
+  (o) CG converged in 104 iterations.
+  (o) CG converged in 90 iterations.
+  (o) CG converged in 82 iterations.
+  (o) CG converged in 71 iterations.
+  (o) CG converged in 62 iterations.
+nr converged in 8 iterations.
+[timingInfo] [timingInfo name not set] Finish time (Wall): 3.7637e+06 Finish time (CPU) : 663572
+[timingInfo] [timingInfo name not set] Elapsed time (Wall, seconds): 0.29721 Elapsed time (CPU, seconds) : 0.298673
+(o) Writing gnuplot command file pc_'phi_nr_cg'
+
+------------------------------------------------------
+
+ S O L V E R S                                        
+ D E M O   C O D E                                    
+
+ Running on 1 processors 
+
+------------------------------------------------------
+
+
+Input Summary: 
+--------------------------- 
+No. PE   in  x-direction: 1
+             y-direction: 1
+No. Cells in x-direction: 40
+             y-direction: 40
+Linear solver           : cg
+Non-Linear solver       : nr
+
+LINEAR SOLVE for initial guess
+  (o) CG converged in 149 iterations.
+(o) Writing gnuplot command file pc_'phi'
+NON-LINEAR SOLVE
+[timingInfo] [timingInfo name not set] Start time (Wall): 3.76369e+06 Start time (CPU) : 353045
+  (o) CG converged in 121 iterations.
+  (o) CG converged in 117 iterations.
+  (o) CG converged in 116 iterations.
+  (o) CG converged in 116 iterations.
+  (o) CG converged in 115 iterations.
+  (o) CG converged in 113 iterations.
+  (o) CG converged in 113 iterations.
+  (o) CG converged in 112 iterations.
+  (o) CG converged in 111 iterations.
+  (o) CG converged in 111 iterations.
+  (o) CG converged in 110 iterations.
+  (o) CG converged in 109 iterations.
+  (o) CG converged in 107 iterations.
+  (o) CG converged in 106 iterations.
+  (o) CG converged in 105 iterations.
+  (o) CG converged in 104 iterations.
+  (o) CG converged in 103 iterations.
+  (o) CG converged in 100 iterations.
+  (o) CG converged in 98 iterations.
+  (o) CG converged in 97 iterations.
+  (o) CG converged in 95 iterations.
+  (o) CG converged in 94 iterations.
+  (o) CG converged in 93 iterations.
+  (o) CG converged in 93 iterations.
+  (o) CG converged in 92 iterations.
+  (o) CG converged in 91 iterations.
+  (o) CG converged in 90 iterations.
+  (o) CG converged in 89 iterations.
+  (o) CG converged in 88 iterations.
+  (o) CG converged in 88 iterations.
+  (o) CG converged in 87 iterations.
+  (o) CG converged in 86 iterations.
+  (o) CG converged in 85 iterations.
+  (o) CG converged in 85 iterations.
+  (o) CG converged in 84 iterations.
+  (o) CG converged in 83 iterations.
+  (o) CG converged in 82 iterations.
+  (o) CG converged in 81 iterations.
+  (o) CG converged in 80 iterations.
+  (o) CG converged in 79 iterations.
+  (o) CG converged in 78 iterations.
+  (o) CG converged in 76 iterations.
+  (o) CG converged in 76 iterations.
+  (o) CG converged in 74 iterations.
+  (o) CG converged in 73 iterations.
+  (o) CG converged in 73 iterations.
+  (o) CG converged in 71 iterations.
+  (o) CG converged in 71 iterations.
+  (o) CG converged in 70 iterations.
+  (o) CG converged in 68 iterations.
+  (o) CG converged in 68 iterations.
+  (o) CG converged in 67 iterations.
+  (o) CG converged in 66 iterations.
+  (o) CG converged in 65 iterations.
+  (o) CG converged in 65 iterations.
+  (o) CG converged in 64 iterations.
+  (o) CG converged in 62 iterations.
+  (o) CG converged in 62 iterations.
+  (o) CG converged in 61 iterations.
+  (o) CG converged in 61 iterations.
+  (o) CG converged in 59 iterations.
+  (o) CG converged in 58 iterations.
+  (o) CG converged in 57 iterations.
+  (o) CG converged in 57 iterations.
+  (o) CG converged in 53 iterations.
+  (o) CG converged in 52 iterations.
+  (o) CG converged in 51 iterations.
+  (o) CG converged in 50 iterations.
+  (o) CG converged in 50 iterations.
+  (o) CG converged in 49 iterations.
+nr converged in 70 iterations.
+[timingInfo] [timingInfo name not set] Finish time (Wall): 3.76369e+06 Finish time (CPU) : 2757145
+[timingInfo] [timingInfo name not set] Elapsed time (Wall, seconds): 2.40947 Elapsed time (CPU, seconds) : 2.4041
+(o) Writing gnuplot command file pc_'phi_nr_cg'
