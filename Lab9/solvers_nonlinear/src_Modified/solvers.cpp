@@ -68,7 +68,6 @@ int main(int argc, char *argv[])
 
    solver   = "none";
    nlsolver = "none";
-     
    for (int count =  0 ; count < argc; ++count)
      {
        if ( !strcmp(argv[count],"-nPEx"    ) ) nPEx   = atoi(argv[count+1]);
@@ -80,9 +79,8 @@ int main(int argc, char *argv[])
        if ( !strcmp(argv[count],"-r"       ) ) relax    = atof(argv[count+1]) ;
        if ( !strcmp(argv[count],"-c0"      ) ) c0       = atof(argv[count+1]) ;
        if ( !strcmp(argv[count],"-tau"     ) ) tau      = atof(argv[count+1]) ;
-       if ( !strcmp(argv[count],"-nTH"     ) ) nTH      = atof(argv[count+1]) ;
+       if ( !strcmp(argv[count],"-nTH"     ) ) nTH      = atoi(argv[count+1]) ;
      }
-
    if ( myMPI.myPE == 0 )
      {
        cout << endl;
@@ -96,7 +94,6 @@ int main(int argc, char *argv[])
        cout << "Non-Linear solver       : " << nlsolver << endl;
        cout << endl;
      }
-
    myMPI.GridDecomposition(nPEx,nPEy,nCellx,nCelly);
 
    // -
@@ -111,7 +108,7 @@ int main(int argc, char *argv[])
 
    double x0 = eachPElength_x * myMPI.iPE;   double x1 = x0 + eachPElength_x;
    double y0 = eachPElength_y * myMPI.jPE;   double y1 = y0 + eachPElength_y;
-   
+   cout << "here0" << endl;
    LaplacianOnGrid MESH(x0,x1,y0,y1,nCellx,nCelly, myMPI, nTH);
 
    MESH.k0 = 1.;
@@ -166,7 +163,7 @@ int main(int argc, char *argv[])
 	 {
 	   
 	   if      ( solver == "jacobi" ) MESH.Jacobi(MESH.Jacobian , MESH.minusf , MESH.dPhi  , myMPI );
-	   else if ( solver == "cg"     ) MESH.CG    (MESH.Jacobian , MESH.minusf , MESH.dPhi  , myMPI );
+	   else if ( solver == "cg"     ) MESH.CG    (MESH.Jacobian , MESH.minusf , MESH.dPhi  , myMPI, nTH);
 	   else                           FatalError("Solver " + solver + " not found.");
 
 	   converged = MESH.NR_Phi_Update( tol , relax );
@@ -176,7 +173,7 @@ int main(int argc, char *argv[])
 	 {
 	   
 	   if      ( solver == "jacobi" ) MESH.Jacobi(MESH.Acoef , MESH.b , MESH.phiNew , myMPI );
-	   else if ( solver == "cg"     ) MESH.CG    (MESH.Acoef , MESH.b , MESH.phiNew , myMPI );	   
+	   else if ( solver == "cg"     ) MESH.CG    (MESH.Acoef , MESH.b , MESH.phiNew , myMPI, nTH);	   
 	   else                           FatalError("Solver " + solver + " not found.");
 
 	   converged = MESH.SA_Phi_Update ( tol , relax );

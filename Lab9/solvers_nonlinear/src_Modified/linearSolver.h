@@ -251,8 +251,17 @@ void CG(VDD &Matrix , VD &RHS , VD &Solution , mpiInfo & myMPI, int nTH)
       rowLOOP p[row] = rnew[row] + beta*p[row];
       
       // (4.5) r "new" will be r "old" for next iteration
-      #pragma 
-      rowLOOP r[row] = rnew[row];
+      omp_set_num_threads(nTH);
+      int numPerTH =  nField / nTH;
+      #pragma omp parallel
+      {
+        int myTH = omp_get_thread_num();  
+        int Lower    =  numPerTH*myTH;
+        int Upper    = (numPerTH*(1+myTH)-1)*(myTH != nTH-1) + (nField)*(myTH == nTH-1); 
+        for ( int row = Lower ; row <= Upper    ; ++row ){
+          rowLOOP r[row] = rnew[row];
+        }
+      };
       r_dot_r        = rnew_dot_rnew;
 
       // (4.6) Check convergence on this PE

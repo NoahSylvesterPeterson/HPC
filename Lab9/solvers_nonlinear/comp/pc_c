@@ -1,0 +1,2 @@
+splot "orig0.plt" w l,  "orig1.plt" w l,  "orig2.plt" w l,  "orig3.plt" w l, "Mod0.plt", "Mod1.plt",  "Mod2.plt",  "Mod3.plt"
+set title "Comparison Results"

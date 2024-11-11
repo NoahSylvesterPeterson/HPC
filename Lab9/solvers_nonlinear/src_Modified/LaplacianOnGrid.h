@@ -33,6 +33,7 @@ public:
 
   double x0, x1, y0, y1;
   VD x,y;
+  int nTH;
   int nRealx    , nRealy   , nField;
   int nCellx    , nCelly   ;
   int nStaggeredCellx, nStaggeredCelly;
@@ -46,7 +47,6 @@ public:
   VD Qval;
   double k0 , k1, k2;
   double pi;
-  int nTH;
 
   //  ==
   //  ||
@@ -56,7 +56,7 @@ public:
 
   LaplacianOnGrid(double _x0   , double _x1,  double _y0, double _y1 , int ncell_x , int ncell_y, mpiInfo &myMPI, int _nTH)
   {
-    nTH = _nTH
+    nTH = _nTH;
     k0 =  2.0 ;
     k1 =  0.0 ;
     k2 =  0.0 ;
@@ -285,20 +285,24 @@ public:
     Matrix[ BCrow ] [ 1 ] = 1.      ; 
     Jcoef [ BCrow ] [ 1 ] = BCrow   ;
     RHS   [ BCrow ]       = BCvalue ;
-
-    #pragma
-    rLOOP
-      if (  r != BCrow )
-	{
-	  cLOOP
-	    {
-	      if ( Jcoef[r][c] == BCrow )
-		{
-		  RHS[r] -= Matrix[r][c]*BCvalue;
-		  Jcoef[r][c] = 0; Matrix[r][c] = 0.;
-		}
-	    }
-	}
+    omp_set_num_threads(nTH);
+    int numPerTH =  nField / nTH;
+    #pragma omp parallel
+    {
+      int myTH = omp_get_thread_num();  
+      int Lower    =  numPerTH*myTH+1;
+      int Upper    = (numPerTH*(1+myTH)-1)*(myTH != nTH-1) + (nField)*(myTH == nTH-1); 
+      for ( int r = Lower ; r <= Upper    ; ++r ){
+        if (  r != BCrow ){
+          cLOOP{
+            if ( Jcoef[r][c] == BCrow ){   
+              RHS[r] -= Matrix[r][c]*BCvalue;
+              Jcoef[r][c] = 0; Matrix[r][c] = 0.;
+            }
+          }
+        }
+      }
+    }
   }
 
   //  ==
