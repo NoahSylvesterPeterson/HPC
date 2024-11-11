@@ -16,10 +16,10 @@
 # -
 
 #SBATCH --nodes=1
-#SBATCH --ntasks=4
-#SBATCH --time=00:10:00
+#SBATCH --ntasks=16
+#SBATCH --time=00:05:00
 #SBATCH --partition=amilan
-#SBATCH --output=slurm-%j.out
+#SBATCH --output=slurm.out
 
 # -
 # |
@@ -31,6 +31,7 @@ module purge
 module load intel
 module load impi
 module load python
+ml advisor
 
 # -
 # |
@@ -46,9 +47,23 @@ echo "=="
 echo "src"
 cd src
 rm solvers
-mpic++ solvers.cpp -o solvers -std=c++11 -fopenmp 
-mpirun -n 4 ./solvers -nPEx 2 -nPEy 2 -nCellx 20 -nCelly 20 -solver cg -nl sa -c0 1. -tau 5. -r .1
+mpicxx solvers.cpp -o solvers -std=c++11 -fopenmp -I /curc/sw/install/intel/2022.1.2/advisor/2022.0.0/include -ldl
+mpirun -n 4 ./solvers -nPEx 2 -nPEy 2 -nCellx 24 -nCelly 24 -solver cg -nl sa -c0 1. -tau 5. -r .1 > dat.out
+cd ..
+cp src/phi_sa_cg_0_0.plt comp/orig0.plt
+cp src/phi_sa_cg_1_0.plt comp/orig1.plt
+cp src/phi_sa_cg_2_0.plt comp/orig2.plt
+cp src/phi_sa_cg_3_0.plt comp/orig3.plt
 
+cd src_Modified
+rm solvers
+mpicxx solvers.cpp -o solvers -std=c++11 -fopenmp -I /curc/sw/install/intel/2022.1.2/advisor/2022.0.0/include -ldl
+mpirun -n 4 ./solvers -nPEx 2 -nPEy 2 -nCellx 20 -nCelly 20 -solver cg -nl sa -c0 1. -tau 5. -r .1 -nTH 4 > dat.out
+cd ..
+cp src_Modified/phi_sa_cg_0_0.plt comp/Mod0.plt
+cp src_Modified/phi_sa_cg_1_0.plt comp/Mod1.plt
+cp src_Modified/phi_sa_cg_2_0.plt comp/Mod2.plt
+cp src_Modified/phi_sa_cg_3_0.plt comp/Mod3.plt
 
 echo "=="
 echo "||"

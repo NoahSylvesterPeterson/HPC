@@ -259,7 +259,7 @@ void CG(VDD &Matrix , VD &RHS , VD &Solution , mpiInfo & myMPI, int nTH)
         int Lower    =  numPerTH*myTH;
         int Upper    = (numPerTH*(1+myTH)-1)*(myTH != nTH-1) + (nField)*(myTH == nTH-1); 
         for ( int row = Lower ; row <= Upper    ; ++row ){
-          rowLOOP r[row] = rnew[row];
+          r[row] = rnew[row];
         }
       };
       r_dot_r        = rnew_dot_rnew;

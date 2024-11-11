@@ -40,7 +40,7 @@ int main(int argc, char *argv[])
    MPI_Init     (&argc         , &argv       );
    MPI_Comm_size(MPI_COMM_WORLD, &myMPI.numPE);
    MPI_Comm_rank(MPI_COMM_WORLD,&myMPI.myPE  );
-
+   timingInfo time;
 
    int nPEx, nPEy, nCellx, nCelly;
    string   solver;
@@ -108,7 +108,6 @@ int main(int argc, char *argv[])
 
    double x0 = eachPElength_x * myMPI.iPE;   double x1 = x0 + eachPElength_x;
    double y0 = eachPElength_y * myMPI.jPE;   double y1 = y0 + eachPElength_y;
-   cout << "here0" << endl;
    LaplacianOnGrid MESH(x0,x1,y0,y1,nCellx,nCelly, myMPI, nTH);
 
    MESH.k0 = 1.;
@@ -152,7 +151,7 @@ int main(int argc, char *argv[])
      }
    
    // Nonlinear iterations
-   
+   time.Start(0);
    while ( global_converged == 0 && ++iter < max_iter )
      {
        //       if ( myMPI.myPE == 0 ) { printf("\n\n");   printf("-- %s -- Iteration %d\n",nlsolver.c_str(),iter); }
@@ -188,7 +187,7 @@ int main(int argc, char *argv[])
 
    if ( global_converged == 1 ) if ( myMPI.myPE == 0 ) cout << nlsolver << " converged in " << iter << " iterations.\n" ;
    if ( global_converged == 0 ) if ( myMPI.myPE == 0 ) cout << nlsolver << " failed to converge after " << iter << " iterations.\n" ;
-    
+   time.Finish(0);
    MESH.plot( "phi_"   + nlsolver + "_" + solver , MESH.phi    , 0 , myMPI      );
 
 
@@ -200,7 +199,7 @@ int main(int argc, char *argv[])
    // |
    // -
    
-   //   myTime.Finish(myMPI.myPE);
+  // myTime.Finish(myMPI.myPE);
 
    MPI_Finalize();
    return 0;
